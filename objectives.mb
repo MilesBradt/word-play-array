@@ -1,7 +1,2 @@
--Create a form where users may enter a sentence.
-
--Turn that sentence into an array using the split method.
-
--Then, loop through this array to build a new array out of every word in the sentence that is 3 or more characters in length.
-
--Finally, reverse the order of the new array, join it back together into a string, and display it to the user.
+Use a forEach() loop within another forEach() loop to build an array representing a deck of cards. A deck consists of 52 cards - 13 ranks in each of 4 suits.
+Then, display a list of every card in the deck. (Hint: Each element of the array should read something like "ace of spades" or "4 of hearts").

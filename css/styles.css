@@ -1,0 +1,12 @@
+.left {
+  float: left;
+}
+
+.okay {
+  display: flex;
+  margin: 0 auto;
+}
+
+.outputFor, .outputForEach {
+  display: none;
+}

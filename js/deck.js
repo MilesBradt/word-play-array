@@ -6,9 +6,18 @@ $(document).ready(function() {
 
     suits.forEach(function(suit) {
       cardNumber.forEach(function(card) {
-        $(".output").append("<li>" + card + " " + suit + "</li>");
+        $(".outputForEach").append("<li>" + card + " " + suit + "</li>");
       });
     });
+
+    for (var i = 0; i < cardNumber.length; i += 1) {
+      for (var s = 0; s < suits.length; s += 1) {
+      $(".outputFor").append("<li>" + " " + cardNumber[i] + " " + suits[s] + "</li>")
+      }
+    }
+
+    $(".outputFor").fadeIn();
+    $(".outputForEach").fadeIn();
 
     event.preventDefault();
   });

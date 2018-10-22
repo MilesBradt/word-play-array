@@ -1,5 +1,6 @@
 // Working array
-var sentenceArray = [];
+// var sentenceArray = [];
+
 
 $(document).ready(function() {
   $(".userInput").submit(function(event){
@@ -7,9 +8,28 @@ $(document).ready(function() {
     // Working array
     // sentenceArray.push(sentence);
 
+    // Array we want to change
     var words = sentence.split(' ');
-    sentenceArray.push(words);
-    console.log(sentenceArray);
+    var test = [];
+
+    words.forEach(function(word) {
+      if (word.length > 4) {
+        test.push(word);
+      }
+    });
+
+    // // Array we loop through
+    // var cloneWords = words.slice();
+
+
+    // var threeChar = words.map(function(word){
+    //   return word.length > 4;
+    // });
+
+
+
+
+    console.log(test);
 
     // $(".output").text($("input#userSentence").val());
 
